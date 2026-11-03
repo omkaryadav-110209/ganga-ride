@@ -36,30 +36,5 @@ int main()
         printf("Enter Number of Adults: ");
         scanf("%d", &adults);
 
-        printf("Enter Number of Children: ");
-        scanf("%d", &children);
-
-        total = (adults * price) + (children * price / 2);
-
-        if (adults + children >= 10)
-            discount = total * 15 / 100;
-        else if (adults + children >= 5)
-            discount = total * 10 / 100;
-        else
-            discount = 0;
-
-        finalAmount = total - discount;
-
-        printf("\n***** GANGA RIDE BILL *****\n");
-        printf("Total Fare: Rs. %.2f\n", total);
-        printf("Discount: Rs. %.2f\n", discount);
-        printf("Final Amount: Rs. %.2f\n", finalAmount);
-        printf("THANK YOU! ENJOY YOUR RIDE!");
     }
-    else
-    {
-        printf("\nINVALID RIDE SELECTION!");
-    }
-
-    return 0;
 }
